@@ -1,0 +1,9 @@
+.header__title {
+    font-size: 5em;
+    font-family: monospace;
+    cursor: pointer;
+}
+.header__title-link {
+    color: green;
+    letter-spacing: 2px;
+}

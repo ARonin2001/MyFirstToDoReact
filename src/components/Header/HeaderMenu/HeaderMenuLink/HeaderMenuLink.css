@@ -1,0 +1,9 @@
+.header li {
+    font-size: 20px;
+}
+.header li:not(:last-child) {
+    margin-right: 15px;
+}
+.header li a {
+    color: #000;
+}
