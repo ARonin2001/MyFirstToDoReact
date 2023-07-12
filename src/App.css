@@ -4,3 +4,9 @@
 .title {
   font-size: 3em;
 }
+.content h3 {margin:0;}
+.content__container {
+  max-width: 991px;
+  margin: 0 auto;
+  padding: 20px 0;
+}

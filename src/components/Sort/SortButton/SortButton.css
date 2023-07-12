@@ -1,0 +1,13 @@
+.sort__button {
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .1s;
+    letter-spacing: 2px;
+}
+.sort__button:hover {
+    background-color: gray;
+    color: #fff;
+}

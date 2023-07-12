@@ -1,0 +1,6 @@
+.addTask__input:first-child {
+    max-width: 500px;
+}
+.addTask__input:last-child {
+    max-width: 200px;
+}

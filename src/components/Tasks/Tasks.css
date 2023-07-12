@@ -1,0 +1,13 @@
+.tasks {
+    padding: 10px 0;
+}
+.tasks__container {
+    padding: 10px 0;
+}
+.tasks__container .task:not(:last-child) {
+    margin-bottom: 20px;
+}
+.tasks .pagination .is-current {
+    background-color: #48c78e;
+    border-color: #48c78e;
+}

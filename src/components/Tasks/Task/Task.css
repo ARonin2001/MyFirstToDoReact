@@ -1,0 +1,27 @@
+.task {
+    max-width: 550px;
+    max-height: 160px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.task__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.task__information {
+    margin-right: 30px;
+}
+.task__title {
+    color: #363636;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.125;
+    border-bottom: 1px solid gray;
+}
+.task__btn_delete {
+    margin-bottom: 10px;
+}
+.task__btn_delete i {
+    color: rgb(187, 42, 42);
+}

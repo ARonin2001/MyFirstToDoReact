@@ -1,0 +1,14 @@
+.sort {
+    border-bottom: 1px solid gray;
+    padding: 0 0 10px 0;
+}
+.sort__title {
+    font-size: 3em !important;
+}
+.sort__buttons {
+    margin-top: 10px;
+    display: flex;
+}
+.sort__button:not(:last-child) {
+    margin-right: 20px;
+}
