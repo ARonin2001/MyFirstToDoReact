@@ -4,8 +4,8 @@ import Logo from './Logo/Logo';
 
 const Header = (props) => {
     return (
-        <header class="header">
-            <div class="header__container">
+        <header className="header">
+            <div className="header__container">
                 <Logo />
                 <HeaderMenu />
             </div>

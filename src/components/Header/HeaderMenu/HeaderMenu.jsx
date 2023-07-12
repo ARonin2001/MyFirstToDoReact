@@ -3,8 +3,8 @@ import HeaderMenuLink from './HeaderMenuLink/HeaderMenuLink';
 
 const HeaderMenu = (props) => {
     return (
-        <nav class="header__menu">
-            <ul class="header__ul">
+        <nav className="header__menu">
+            <ul className="header__ul">
                 <HeaderMenuLink />                
                 <HeaderMenuLink />                
                 <HeaderMenuLink />                

@@ -2,10 +2,10 @@ import './TaskDateTime.css';
 
 const TaskDateTime = ({title, taskDate, taskTime}) => {
     return (
-        <div class="task__dateTime">
-            <div class="task__dateTime-title">{title}</div>
-            <span class="task__date">{taskDate}</span>
-            <span class="task__time">{taskTime} </span>
+        <div className="task__dateTime">
+            <div className="task__dateTime-title">{title}</div>
+            <span className="task__date">{taskDate}</span>
+            <span className="task__time">{taskTime} </span>
         </div>
     );
 }

@@ -2,7 +2,7 @@ import './SortButton.css';
 
 const SortButton = ({text}) => {
     return (
-        <div class="sort__button">{text}</div>
+        <div className="sort__button">{text}</div>
     );
 }
 
