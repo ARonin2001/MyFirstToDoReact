@@ -5,9 +5,8 @@ const HeaderMenu = (props) => {
     return (
         <nav className="header__menu">
             <ul className="header__ul">
-                <HeaderMenuLink />                
-                <HeaderMenuLink />                
-                <HeaderMenuLink />                
+                <HeaderMenuLink title="Main" href="/" />                
+                <HeaderMenuLink title="About ToDo" href="about-to-do" />                
             </ul>
         </nav>
     );
