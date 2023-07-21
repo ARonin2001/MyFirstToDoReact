@@ -5,13 +5,27 @@ import TextAreaField from './../../Fields/TextAreaField/TextAreaField';
 
 const TaskCreatorForm = (props) => {
     const [valueTitle, setValueTitle] = useState("");
+    const [valueDescription, setValueDescription] = useState("");
     const [valueDate, setValueDate] = useState("");
     const [valueTime, setValueTime] = useState("");
-    const [valueDescription, setValueDescription] = useState("");
+
+    const addNewTask = (event) => {
+        event.preventDefault();
+        let newTask = {
+            title: valueTitle,
+            description: valueDescription,
+            deadLine: {
+                date: new Date(valueDate).toLocaleDateString(),
+                time: valueTime
+            }
+        };
+        props.addTask(newTask);
+    }
 
     return (
-        <form className="addTask__form form form-addTask" action="#" method="post">
-            <InputField fieldText={"Title"} type={"text"} value={valueTitle} setValue={setValueTitle} />
+        <form className="addTask__form form form-addTask" action="#" method="post" onSubmit={addNewTask}>
+            <InputField fieldText={"Title"} type={"text"} value={valueTitle} setValue={setValueTitle} 
+                required={true} />
             <TextAreaField fieldText={"Title"} value={valueDescription} 
                 setValue={setValueDescription} />
             <InputField fieldText={"Date"} type={"date"} 
