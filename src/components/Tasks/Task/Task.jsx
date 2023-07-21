@@ -7,16 +7,19 @@ const Task = (props) => {
         <div className="task">
             <div className="task__container">
                 <div className="task__information">
-                    <h3 className="task__title">Title</h3>
-                    <div className="task__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptate! Corrupti nemo nulla, corporis eaque eveniet qui fugiat suscipit voluptates id illo minus, odio reprehenderit impedit! Quas qui autem voluptate.</div>
+                    <h3 className="task__title">{props.title}</h3>
+                    <div className="task__description">{props.description}</div>
                     {/* Date and Time: Creation Task And Deadline Task */}
                     <div className="task__dateTime-cotainer">
                         <TaskDateTime title={"Creation date:"} 
-                            taskDate={"05.07.2023"} 
-                            taskTime={"15:30"} />
-                        <TaskDateTime title={"Deadline:"} 
-                            taskDate={"05.07.2023"} 
-                            taskTime={"15:30"} />
+                            taskDate={props.creationDate} 
+                            taskTime={props.creationTime} />
+                        {props.deadLineDate && 
+                            <TaskDateTime title={"Deadline:"} 
+                                taskDate={props.deadLineDate} 
+                                taskTime={props.deadLineTime} />
+                        }
+                        
                     </div>
                 </div>
                 {/* buttons: delete and edit task */}
