@@ -2,7 +2,7 @@ import './TaskButon.css';
 
 const TaskButon = (props) => {
     return (
-        <button className={`task__btn ${props.btnClassName}`}>
+        <button className={`task__btn ${props.btnClassName}`} onClick={() =>  props.clickMethod()}>
             {props.icon}
         </button>
     );

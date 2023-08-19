@@ -3,6 +3,11 @@ import TaskButon from './TaskButon/TaskButon';
 import TaskDateTime from './TaskDateTime/TaskDateTime';
 
 const Task = (props) => {
+    const deleteTask = () => {
+        props.deleteTask(props.id);
+        props.toggleEddit();
+    } 
+
     return (
         <div className="task">
             <div className="task__container">
@@ -25,9 +30,11 @@ const Task = (props) => {
                 {/* buttons: delete and edit task */}
                 <div className="task__buttons">
                     <TaskButon btnClassName={"task__btn_delete"} 
-                        icon={<i className="bi bi-x-square-fill"></i>} />
+                        icon={<i className="bi bi-x-square-fill"></i>} 
+                        clickMethod={deleteTask}  />
                     <TaskButon btnClassName={"task__btn_edit"} 
-                        icon={<i className="bi bi-pencil-square"></i>} />
+                        icon={<i className="bi bi-pencil-square"></i>} 
+                        clickMethod={() => {props.toggleEddit(); props.getTask(props.id)}} />
                 </div>
             </div>
         </div>

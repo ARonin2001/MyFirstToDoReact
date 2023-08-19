@@ -1,7 +1,8 @@
+import { memo } from 'react';
 import './Sort.css';
 import SortButton from './SortButton/SortButton';
 
-const Sort = (props) => {
+const Sort = memo((props) => {
     return (
         <div className="sort">
             <h2 className="sort__title title">Sort</h2>
@@ -11,6 +12,6 @@ const Sort = (props) => {
             </div>
         </div>
     );
-}
+})
 
 export default Sort;
